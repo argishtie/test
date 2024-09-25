@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Update User Profile</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+		<link rel="icon" href="/favicon-32x32.png" />
+	</head>
+	<body class="body">
+		<div class="container-update">
+			<a class="back" href="https://settling-bunny-happy.ngrok-free.app/users/profile">Back</a>
+			<h1 class="update-tilte">Update User Profile</h1>
+			<form id="update-profile-form">
+				<div class="update-form-group">
+					<label for="firstName">First Name:</label>
+					<input type="text" id="firstName" name="firstName" required />
+					<span id="firstName-error" class="error"></span>
+				</div>
+				<div class="update-form-group">
+					<label for="lastName">Last Name:</label>
+					<input type="text" id="lastName" name="lastName" required />
+					<span id="lastName-error" class="error"></span>
+				</div>
+
+				<div class="update-form-group">
+					<button type="submit">Update Profile</button>
+				</div>
+				<div id="message"></div>
+			</form>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="/javascripts/updateProfile.js"></script>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile</title>
+		<link rel="stylesheet" href="/stylesheets/main.css" />
+		<link rel="icon" href="/favicon-32x32.png" />
+	</head>
+	<body>
+		<main class="main">
+			<div class="container">
+				<article class="article">
+					<h2>Profile</h2>
+					<a class="logout" href="https://settling-bunny-happy.ngrok-free.app/users/login">
+						log out</a
+					>
+				</article>
+
+				<div class="section">
+					<div class="container">
+						<div class="navbar"></div>
+						<div class="create-post">
+							<form action="" id="create">
+								<input type="file" name="postImg" id="file" />
+								<input type="text" name="title" placeholder="Create Post" />
+								<input type="text" name="content" />
+								<input type="submit" value="Post" />
+							</form>
+						</div>
+						<div class="posts">
+							<div class="container">
+								<div class="post-container">
+									<div class="feed">
+										<div class="feed-author">
+											<img
+												src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+												alt=""
+											/>
+											<p>Profile Picture</p>
+										</div>
+										<div class="post-img">
+											<div class="div1">
+												<img
+													src="/images/2024-09-09T18:23:45.725Z-002o68hrzso.jpg"
+													alt=""
+												/>
+											</div>
+											<div class="div2">
+												<img
+													src="/images/2024-09-09T18:23:45.725Z-002o68hrzso.jpg"
+													alt=""
+												/>
+											</div>
+										</div>
+										<div class="post-text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Numquam, voluptate
+											</p>
+										</div>
+										<!-- <div class="post-footer">
+											<p>Posted on 01.01.2021</p>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="/javascripts/profile.js"></script>
+		<script src="/javascripts/feed.js"></script>
+	</body>
+</html>
