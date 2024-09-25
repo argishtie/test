@@ -73,7 +73,7 @@ async function socket() {
 
   userList();
 
-  const socket = io.connect('settling-bunny-happy.ngrok-free.app', {
+  const socket = io.connect('test-9tkh.onrender.com', {
     extraHeaders: {
       authorization: `${token}`,
     },
